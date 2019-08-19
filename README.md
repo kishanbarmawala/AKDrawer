@@ -1,5 +1,5 @@
 # AKDrawer
- Fully Customization Side Menu
+ Fully Customized Side Menu
  
  Other Modules :-
   - DropDown
