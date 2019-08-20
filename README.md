@@ -17,17 +17,19 @@ If you like SideMenu, give it a ★ at the top right of this page.
     Swift 4.
     iOS 9.0 or higher.
 
-## How to use will be come soon!
+## How to Use?
 ```swift
 var menuVC = SidemenuController()  // Declare View Controller Object you want to Reveal
 
-viewDidLoad() {
-	menuVC = self.storyboard!.instantiateViewController(withIdentifier: "MENU") as! SidemenuController
+override viewDidLoad() {
+    super.viewDidLoad()
 
-	// Handle SideMenu Click event from Below Closure Code
-	menuVC.menuSelection = { selection in
-            print(selection)
-        }
+    menuVC = self.storyboard!.instantiateViewController(withIdentifier: "MENU") as! SidemenuController
+
+    // Handle SideMenu Click event from Below Closure Code
+    menuVC.menuSelection = { selection in
+        print(selection)
+    }
 }
 
 func sideMenuTapped() {
@@ -51,11 +53,11 @@ func sideMenuTapped() {
 ```
 
 
-###### Other Modules :-
+###### Other Modules (How to use will be come soon!):-
   - DropDown
   	1. Android Style DropDown
   	2. Alert Style DropDown
   - Pulse Animation
   - API Calling Class
   - Horizontal Gradient
-  - CollectionView FlowLayout
+  - CollectionView FlowLayout with Equal Spacing with Top, Left, Bottom, Right, interItem and minimumLine Spacing 
