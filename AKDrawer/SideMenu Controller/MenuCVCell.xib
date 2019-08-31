@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCVCell" id="gTV-IL-0wX" customClass="MenuCVCell" customModule="AKDrawer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk5-Xs-Rrj">
+                        <rect key="frame" x="36" y="0.0" width="0.0" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Dk5-Xs-Rrj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8TO-tm-k0m"/>
+                <constraint firstItem="Dk5-Xs-Rrj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="36" id="tMG-cF-dGd"/>
+                <constraint firstAttribute="bottom" secondItem="Dk5-Xs-Rrj" secondAttribute="bottom" id="tkM-eM-Oao"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dk5-Xs-Rrj" secondAttribute="trailing" constant="36" id="zn6-zK-tUB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="451" height="50"/>
+            <connections>
+                <outlet property="lblTitle" destination="Dk5-Xs-Rrj" id="rue-lt-oGI"/>
+            </connections>
+            <point key="canvasLocation" x="422.46376811594206" y="95.758928571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
