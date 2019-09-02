@@ -15,12 +15,13 @@ You can Give your Reviews and Best Ideas!
 
 ## ScreenShots :-
 
-Sidemenu Collapsed   |  Sidemenu Expanded
-:-------------------:|:-------------------:
-![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Collapsed.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/SideMenu%20Expanded.pn)
+  Sidemenu Collapsed  |  Sidemenu Expanded  |  DropDown with Search  |  Pulse Animation
+:--------------------:|:-------------------:|:----------------------:|:-----------------:
+![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Collapsed.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/SideMenu%20Expanded.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/DropDown%20with%20Search.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Pulse%20Animation.png)
 
-![Alert DropDown](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Alert%20DropDown.png)
-<img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/SideMenu%20Collapsed.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/SideMenu%20Expanded.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/DropDown%20with%20Search.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Pulse%20Animation.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Loader%20With%20Image%20and%20Text.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Alert%20DropDown.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Equal%20Spacing%20CollectionView%20Cell.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Range%20Selection%20Calender.png" width="23%"></img>
+  Loader with Image & Text  |  Alert DropDown  |  Equal Spacing CollectionView Cell  |  Range Selection Calender
+:--------------------:|:-------------------:|:----------------------:|:-----------------:
+![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Loader%20With%20Image%20and%20Text.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Alert%20DropDown.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Equal%20Spacing%20CollectionView%20Cell.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Range%20Selection%20Calender.png)
 
 
 ## Requirements
