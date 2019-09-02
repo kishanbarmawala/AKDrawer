@@ -19,8 +19,8 @@ You can Give your Reviews and Best Ideas!
 :--------------------:|:-------------------:|:----------------------:|:-----------------:
 ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Collapsed.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Expanded.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/DropDown%20with%20Search.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Pulse%20Animation.png)
 
-  Loader with Image & Text  |  Alert DropDown  |  Equal Spacing CollectionView Cell  |  Range Selection Calender
-:--------------------------:|:----------------:|:-----------------------------------:|:--------------------------:
+  Animated Loader  |  Alert DropDown  |  Equal Spacing CV Cell  |  Range Calender
+:-----------------:|:----------------:|:-----------------------:|:----------------:
 ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Loader%20With%20Image%20and%20Text.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Alert%20DropDown.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Equal%20Spacing%20CollectionView%20Cell.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Range%20Selection%20Calender.png)
 
 
