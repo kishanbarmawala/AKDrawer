@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             else if selection[0] == 7 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "OTHER"), animated: true)
             }
         }
-        gradientView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], type: .vertical)
+        gradientView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], direction: .vertical)
         
     }
     
@@ -373,14 +373,14 @@ extension String {
 }
 
 extension UIView {
-    enum GradientType {
+    enum Direction {
         case horizontal
         case vertical
     }
-    func addGradient(colors: [CGColor], type: GradientType) {
+    func addGradient(colors: [CGColor], direction: Direction) {
         let gradeLayer = CAGradientLayer()
         gradeLayer.colors = colors//[UIColor.red.cgColor, UIColor.blue.cgColor]
-        switch type {
+        switch direction {
         case .horizontal:
             gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
             gradeLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
@@ -392,3 +392,4 @@ extension UIView {
         self.layer.insertSublayer(gradeLayer, at: 0)
     }
 }
+

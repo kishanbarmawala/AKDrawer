@@ -13,6 +13,10 @@ You can Give your Reviews and Best Ideas!
 - Rubber band effect while panning.
 
 
+## ScreenShots :-
+<img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/SideMenu%20Collapsed.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/SideMenu%20Expanded.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/DropDown%20with%20Search.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Pulse%20Animation.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Loader%20With%20Image%20and%20Text.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Alert%20DropDown.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Equal%20Spacing%20CollectionView%20Cell.png" width="23%"></img> <img src="https://github.com/kishanbarmawala/AKDrawer/tree/master/Screenshot/Range%20Selection%20Calender.png" width="23%"></img>
+
+
 ## Requirements
 
 - Swift 4.
@@ -27,7 +31,9 @@ override viewDidLoad() {
     super.viewDidLoad()
 
     menuVC = self.storyboard!.instantiateViewController(withIdentifier: "MENU") as! SidemenuController
-
+    menuVC.SideMenuHeaderArr = ["Home & Loader","Service","Animation, Alert & Calender","CollectionView Flow Layout","Privacy Policy","Education","Other"]
+    menuVC.SideMenuDataArr = [[],[],[],[],[],[],["Other-1","Other-2"]]
+    
     // Handle SideMenu Click event from Below Closure Code
     menuVC.menuSelection = { selection in
         print(selection)
@@ -35,22 +41,7 @@ override viewDidLoad() {
 }
 
 func sideMenuTapped() {
-    // Present Below NavigationView Controller
-//  self.view.addSubview(menuVC.view)
-// self.addChild(menuVC)
-
-    // Present Over NavigationView Controller
-    UIApplication.shared.keyWindow?.addSubview(menuVC.view)
-    
-    menuVC.view.layoutIfNeeded()
-    
-    menuVC.view.frame = CGRect(x: 0 - UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-    
-    UIView.animate(withDuration: 0.3, animations: { () -> Void in
-        self.menuVC.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-    }, completion: nil)
-    
-    menuVC.view.layoutIfNeeded()
+    menuVC.revealSideMenu()
 }
 ```
 
@@ -232,18 +223,29 @@ func showPulseWithMic()     //Show Pulse Animation with dimView
 - make UIView extension in your Swift File
 - Use:-
 ```swift
-YourView.addHorizontalGradient()
+YourView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], direction: .vertical)
 
 extension UIView {
-    func addHorizontalGradient() {
+    enum Direction {
+        case horizontal
+        case vertical
+    }
+    func addGradient(colors: [CGColor], direction: Direction) {
         let gradeLayer = CAGradientLayer()
-        gradeLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
-        gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradeLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
+        gradeLayer.colors = colors//[UIColor.red.cgColor, UIColor.blue.cgColor]
+        switch direction {
+        case .horizontal:
+            gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+            gradeLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
+        case .vertical:
+            gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+            gradeLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
+        }
         gradeLayer.frame = self.bounds
         self.layer.insertSublayer(gradeLayer, at: 0)
     }
 }
+
 ```
 
 ## How to Set CollectionView Cell Equal Spacing?
