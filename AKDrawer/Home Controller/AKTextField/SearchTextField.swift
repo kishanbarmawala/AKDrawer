@@ -36,6 +36,9 @@ class SearchTextField: UITextField, UITextFieldDelegate, SFSpeechRecognizerDeleg
     var recognitionTask: SFSpeechRecognitionTask?
     let audioEngine = AVAudioEngine()
     
+    let startTone = URL(fileURLWithPath: Bundle.main.path(forResource: "startTone", ofType: "mp3")!)
+    let stopTone = URL(fileURLWithPath: Bundle.main.path(forResource: "stopTone", ofType: "mp3")!)
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         delegate = self
@@ -101,6 +104,17 @@ class SearchTextField: UITextField, UITextFieldDelegate, SFSpeechRecognizerDeleg
     
     @objc func voiceTapped(_ sender: UIButton) {
         self.endEditing(true)
+        /*
+        var audioPlayer = AVAudioPlayer()
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: startTone)
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            audioPlayer.play()
+        }
+        catch { print("My Audio Error: \(error)") }
+        */
         
         if checkForSearchBtn {
             checkForSearchBtn = false

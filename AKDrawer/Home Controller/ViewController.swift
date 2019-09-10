@@ -8,6 +8,8 @@
 
 import UIKit
 
+class ddCell: UITableViewCell {}
+
 @available(iOS 10.0, *)
 class ViewController: UIViewController {
     
@@ -60,7 +62,7 @@ class ViewController: UIViewController {
             else if selection[0] == 7 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "OTHER"), animated: true)
             }
         }
-        gradientView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], direction: .vertical)
+        gradientView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], type: .vertical)
         
     }
     
@@ -373,14 +375,14 @@ extension String {
 }
 
 extension UIView {
-    enum Direction {
+    enum GradientType {
         case horizontal
         case vertical
     }
-    func addGradient(colors: [CGColor], direction: Direction) {
+    func addGradient(colors: [CGColor], type: GradientType) {
         let gradeLayer = CAGradientLayer()
         gradeLayer.colors = colors//[UIColor.red.cgColor, UIColor.blue.cgColor]
-        switch direction {
+        switch type {
         case .horizontal:
             gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
             gradeLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
@@ -392,4 +394,3 @@ extension UIView {
         self.layer.insertSublayer(gradeLayer, at: 0)
     }
 }
-

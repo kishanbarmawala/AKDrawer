@@ -8,8 +8,6 @@
 
 import UIKit
 
-class ddCell: UITableViewCell {}
-
 @available(iOS 10.0, *)
 class AlertController: UIViewController {
 
