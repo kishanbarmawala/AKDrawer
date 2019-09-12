@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1765C0D9232A1E72004056CF /* DateSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765C0D8232A1E72004056CF /* DateSelectionController.swift */; };
 		72166182230D1F0A00C5B29E /* RZViewActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72166180230D1F0900C5B29E /* RZViewActions.m */; };
 		72A577B6230C025D006114E3 /* AlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A577B5230C025D006114E3 /* AlertController.xib */; };
 		72A577B8230C0270006114E3 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A577B7230C0270006114E3 /* AlertController.swift */; };
@@ -20,40 +21,18 @@
 		72DC6EE32314EF0F00C4214B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC6EE22314EF0F00C4214B /* SearchTextField.swift */; };
 		72DC6EE62315081700C4214B /* startTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72DC6EE42315081700C4214B /* startTone.mp3 */; };
 		72DC6EE72315081700C4214B /* stopTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72DC6EE52315081700C4214B /* stopTone.mp3 */; };
-		72DDA5A42316583900D4D156 /* OtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDA5A32316583900D4D156 /* OtherController.swift */; };
 		72DDA5C623165A0500D4D156 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72DDA5B323165A0500D4D156 /* IQKeyboardManager.bundle */; };
 		72DDA5C823165A0500D4D156 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDA5B523165A0500D4D156 /* IQKeyboardManager.swift */; };
 		72DEEF4622FDA6FB00F81906 /* HeaderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEEF4222FDA6FA00F81906 /* HeaderCVCell.swift */; };
 		72DEEF4722FDA6FB00F81906 /* HeaderCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEEF4322FDA6FA00F81906 /* HeaderCVCell.xib */; };
 		72DEEF4822FDA6FB00F81906 /* MenuCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEEF4422FDA6FA00F81906 /* MenuCVCell.xib */; };
 		72DEEF4922FDA6FB00F81906 /* MenuCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEEF4522FDA6FA00F81906 /* MenuCVCell.swift */; };
-		72DF8F172322918A00A79F83 /* CalendarDateRangePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF8F142322918800A79F83 /* CalendarDateRangePickerCell.swift */; };
-		72DF8F182322918A00A79F83 /* CalendarDateRangePickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF8F152322918900A79F83 /* CalendarDateRangePickerHeaderView.swift */; };
-		72DF8F192322918A00A79F83 /* CalendarDateRangePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF8F162322918A00A79F83 /* CalendarDateRangePickerViewController.swift */; };
-		72DF8F1C2322922B00A79F83 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF8F1B2322922B00A79F83 /* ViewController1.swift */; };
 		72EEE12222FAFF9600AA4796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE12122FAFF9600AA4796 /* AppDelegate.swift */; };
 		72EEE12422FAFF9600AA4796 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE12322FAFF9600AA4796 /* ViewController.swift */; };
 		72EEE12722FAFF9600AA4796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EEE12522FAFF9600AA4796 /* Main.storyboard */; };
 		72EEE12922FAFF9800AA4796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72EEE12822FAFF9800AA4796 /* Assets.xcassets */; };
 		72EEE12C22FAFF9800AA4796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EEE12A22FAFF9800AA4796 /* LaunchScreen.storyboard */; };
 		72EEE13422FB036000AA4796 /* SidemenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE13322FB036000AA4796 /* SidemenuController.swift */; };
-		72EEE240231AA26F00CFA3BE /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE230231AA26E00CFA3BE /* JTAppleCalendarView.swift */; };
-		72EEE241231AA26F00CFA3BE /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE231231AA26E00CFA3BE /* UserInteractionFunctions.swift */; };
-		72EEE242231AA26F00CFA3BE /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE232231AA26E00CFA3BE /* JTAppleCalendarLayoutProtocol.swift */; };
-		72EEE243231AA26F00CFA3BE /* InternalActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE233231AA26E00CFA3BE /* InternalActionFunctions.swift */; };
-		72EEE244231AA26F00CFA3BE /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE234231AA26E00CFA3BE /* JTAppleCollectionReusableView.swift */; };
-		72EEE245231AA26F00CFA3BE /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE235231AA26E00CFA3BE /* JTAppleCalendarDelegateProtocol.swift */; };
-		72EEE246231AA26F00CFA3BE /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE236231AA26E00CFA3BE /* JTCalendarProtocols.swift */; };
-		72EEE247231AA26F00CFA3BE /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE237231AA26E00CFA3BE /* CalendarStructs.swift */; };
-		72EEE248231AA26F00CFA3BE /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE238231AA26E00CFA3BE /* CalendarEnums.swift */; };
-		72EEE249231AA26F00CFA3BE /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE239231AA26E00CFA3BE /* UIScrollViewDelegates.swift */; };
-		72EEE24A231AA26F00CFA3BE /* InternalQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE23A231AA26E00CFA3BE /* InternalQueryFunctions.swift */; };
-		72EEE24B231AA26F00CFA3BE /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE23B231AA26E00CFA3BE /* JTAppleCell.swift */; };
-		72EEE24C231AA26F00CFA3BE /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE23C231AA26E00CFA3BE /* JTAppleCalendarVariables.swift */; };
-		72EEE24D231AA26F00CFA3BE /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE23D231AA26E00CFA3BE /* JTAppleCalendarLayout.swift */; };
-		72EEE24E231AA26F00CFA3BE /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE23E231AA26E00CFA3BE /* UICollectionViewDelegates.swift */; };
-		72EEE24F231AA26F00CFA3BE /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE23F231AA26E00CFA3BE /* GlobalFunctionsAndExtensions.swift */; };
-		72EEE259231AAA5000CFA3BE /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE258231AAA5000CFA3BE /* DateCell.swift */; };
 		72EEE25B231AAB2B00CFA3BE /* CalenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE25A231AAB2B00CFA3BE /* CalenderController.swift */; };
 		72F2EB11231793B300877DEE /* NSImage+Compatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2EA9F231793B100877DEE /* NSImage+Compatibility.m */; };
 		72F2EB12231793B300877DEE /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2EAA1231793B100877DEE /* SDAnimatedImageView+WebCache.m */; };
@@ -113,6 +92,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1765C0D8232A1E72004056CF /* DateSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionController.swift; sourceTree = "<group>"; };
 		7216617F230D1F0800C5B29E /* AKDrawer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKDrawer-Bridging-Header.h"; sourceTree = "<group>"; };
 		72166180230D1F0900C5B29E /* RZViewActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZViewActions.m; sourceTree = "<group>"; };
 		72166181230D1F0A00C5B29E /* RZViewActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZViewActions.h; sourceTree = "<group>"; };
@@ -128,17 +108,12 @@
 		72DC6EE22314EF0F00C4214B /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		72DC6EE42315081700C4214B /* startTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startTone.mp3; sourceTree = "<group>"; };
 		72DC6EE52315081700C4214B /* stopTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stopTone.mp3; sourceTree = "<group>"; };
-		72DDA5A32316583900D4D156 /* OtherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherController.swift; sourceTree = "<group>"; };
 		72DDA5B323165A0500D4D156 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		72DDA5B523165A0500D4D156 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
 		72DEEF4222FDA6FA00F81906 /* HeaderCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCVCell.swift; sourceTree = "<group>"; };
 		72DEEF4322FDA6FA00F81906 /* HeaderCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCVCell.xib; sourceTree = "<group>"; };
 		72DEEF4422FDA6FA00F81906 /* MenuCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCVCell.xib; sourceTree = "<group>"; };
 		72DEEF4522FDA6FA00F81906 /* MenuCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCVCell.swift; sourceTree = "<group>"; };
-		72DF8F142322918800A79F83 /* CalendarDateRangePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerCell.swift; sourceTree = "<group>"; };
-		72DF8F152322918900A79F83 /* CalendarDateRangePickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerHeaderView.swift; sourceTree = "<group>"; };
-		72DF8F162322918A00A79F83 /* CalendarDateRangePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerViewController.swift; sourceTree = "<group>"; };
-		72DF8F1B2322922B00A79F83 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		72EEE11E22FAFF9600AA4796 /* AKDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EEE12122FAFF9600AA4796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72EEE12322FAFF9600AA4796 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,23 +122,6 @@
 		72EEE12B22FAFF9800AA4796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72EEE12D22FAFF9800AA4796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72EEE13322FB036000AA4796 /* SidemenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuController.swift; sourceTree = "<group>"; };
-		72EEE230231AA26E00CFA3BE /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarView.swift; sourceTree = "<group>"; };
-		72EEE231231AA26E00CFA3BE /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractionFunctions.swift; sourceTree = "<group>"; };
-		72EEE232231AA26E00CFA3BE /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
-		72EEE233231AA26E00CFA3BE /* InternalActionFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalActionFunctions.swift; sourceTree = "<group>"; };
-		72EEE234231AA26E00CFA3BE /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
-		72EEE235231AA26E00CFA3BE /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
-		72EEE236231AA26E00CFA3BE /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTCalendarProtocols.swift; sourceTree = "<group>"; };
-		72EEE237231AA26E00CFA3BE /* CalendarStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStructs.swift; sourceTree = "<group>"; };
-		72EEE238231AA26E00CFA3BE /* CalendarEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEnums.swift; sourceTree = "<group>"; };
-		72EEE239231AA26E00CFA3BE /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegates.swift; sourceTree = "<group>"; };
-		72EEE23A231AA26E00CFA3BE /* InternalQueryFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalQueryFunctions.swift; sourceTree = "<group>"; };
-		72EEE23B231AA26E00CFA3BE /* JTAppleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCell.swift; sourceTree = "<group>"; };
-		72EEE23C231AA26E00CFA3BE /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
-		72EEE23D231AA26E00CFA3BE /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
-		72EEE23E231AA26E00CFA3BE /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegates.swift; sourceTree = "<group>"; };
-		72EEE23F231AA26E00CFA3BE /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
-		72EEE258231AAA5000CFA3BE /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		72EEE25A231AAB2B00CFA3BE /* CalenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderController.swift; sourceTree = "<group>"; };
 		72F2EA9E231793B100877DEE /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		72F2EA9F231793B100877DEE /* NSImage+Compatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Compatibility.m"; sourceTree = "<group>"; };
@@ -292,6 +250,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1765C0D7232A1E33004056CF /* Date Selection Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1765C0D8232A1E72004056CF /* DateSelectionController.swift */,
+				72EEE25A231AAB2B00CFA3BE /* CalenderController.swift */,
+			);
+			path = "Date Selection Controller";
+			sourceTree = "<group>";
+		};
 		7216617E230D1EF300C5B29E /* RZViewActions */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,7 +316,6 @@
 				72CAA0D823043DB90001E939 /* AnimateController.swift */,
 				72A577B5230C025D006114E3 /* AlertController.xib */,
 				72A577B7230C0270006114E3 /* AlertController.swift */,
-				72EEE25A231AAB2B00CFA3BE /* CalenderController.swift */,
 			);
 			path = "Animate Controller";
 			sourceTree = "<group>";
@@ -371,17 +337,6 @@
 				72DDA5B523165A0500D4D156 /* IQKeyboardManager.swift */,
 			);
 			path = IQKeyboardManagerSwift;
-			sourceTree = "<group>";
-		};
-		72DF8F1A2322919500A79F83 /* Calender */ = {
-			isa = PBXGroup;
-			children = (
-				72DF8F1B2322922B00A79F83 /* ViewController1.swift */,
-				72DF8F142322918800A79F83 /* CalendarDateRangePickerCell.swift */,
-				72DF8F152322918900A79F83 /* CalendarDateRangePickerHeaderView.swift */,
-				72DF8F162322918A00A79F83 /* CalendarDateRangePickerViewController.swift */,
-			);
-			path = Calender;
 			sourceTree = "<group>";
 		};
 		72EEE11522FAFF9600AA4796 = {
@@ -408,43 +363,17 @@
 				72EEE12822FAFF9800AA4796 /* Assets.xcassets */,
 				72EEE12D22FAFF9800AA4796 /* Info.plist */,
 				72EEE12122FAFF9600AA4796 /* AppDelegate.swift */,
-				72DDA5A32316583900D4D156 /* OtherController.swift */,
-				72DF8F1A2322919500A79F83 /* Calender */,
-				72F2EA9D231793B100877DEE /* SDWebImage */,
 				72CAA0DF23043E170001E939 /* SideMenu Controller */,
 				72CAA0DE23043E0A0001E939 /* Home Controller */,
 				72CAA0E023043E230001E939 /* Service Controller */,
 				72CAA0E123043E890001E939 /* Animate Controller */,
 				72A577B9230C2741006114E3 /* CollectionView Flow Layout */,
+				1765C0D7232A1E33004056CF /* Date Selection Controller */,
 				7216617E230D1EF300C5B29E /* RZViewActions */,
 				72DDA5A523165A0500D4D156 /* IQKeyboardManagerSwift */,
-				72EEE22F231AA26E00CFA3BE /* JTAppleCalender */,
+				72F2EA9D231793B100877DEE /* SDWebImage */,
 			);
 			path = AKDrawer;
-			sourceTree = "<group>";
-		};
-		72EEE22F231AA26E00CFA3BE /* JTAppleCalender */ = {
-			isa = PBXGroup;
-			children = (
-				72EEE258231AAA5000CFA3BE /* DateCell.swift */,
-				72EEE230231AA26E00CFA3BE /* JTAppleCalendarView.swift */,
-				72EEE231231AA26E00CFA3BE /* UserInteractionFunctions.swift */,
-				72EEE232231AA26E00CFA3BE /* JTAppleCalendarLayoutProtocol.swift */,
-				72EEE233231AA26E00CFA3BE /* InternalActionFunctions.swift */,
-				72EEE234231AA26E00CFA3BE /* JTAppleCollectionReusableView.swift */,
-				72EEE235231AA26E00CFA3BE /* JTAppleCalendarDelegateProtocol.swift */,
-				72EEE236231AA26E00CFA3BE /* JTCalendarProtocols.swift */,
-				72EEE237231AA26E00CFA3BE /* CalendarStructs.swift */,
-				72EEE238231AA26E00CFA3BE /* CalendarEnums.swift */,
-				72EEE239231AA26E00CFA3BE /* UIScrollViewDelegates.swift */,
-				72EEE23A231AA26E00CFA3BE /* InternalQueryFunctions.swift */,
-				72EEE23B231AA26E00CFA3BE /* JTAppleCell.swift */,
-				72EEE23C231AA26E00CFA3BE /* JTAppleCalendarVariables.swift */,
-				72EEE23D231AA26E00CFA3BE /* JTAppleCalendarLayout.swift */,
-				72EEE23E231AA26E00CFA3BE /* UICollectionViewDelegates.swift */,
-				72EEE23F231AA26E00CFA3BE /* GlobalFunctionsAndExtensions.swift */,
-			);
-			path = JTAppleCalender;
 			sourceTree = "<group>";
 		};
 		72F2EA9D231793B100877DEE /* SDWebImage */ = {
@@ -659,36 +588,24 @@
 				72EEE12422FAFF9600AA4796 /* ViewController.swift in Sources */,
 				72F2EB3C231793B300877DEE /* UIImageView+WebCache.m in Sources */,
 				72F2EB3A231793B300877DEE /* SDImageTransformer.m in Sources */,
-				72EEE244231AA26F00CFA3BE /* JTAppleCollectionReusableView.swift in Sources */,
-				72DF8F182322918A00A79F83 /* CalendarDateRangePickerHeaderView.swift in Sources */,
 				72F2EB27231793B300877DEE /* NSButton+WebCache.m in Sources */,
 				72EEE12222FAFF9600AA4796 /* AppDelegate.swift in Sources */,
-				72EEE248231AA26F00CFA3BE /* CalendarEnums.swift in Sources */,
-				72DF8F1C2322922B00A79F83 /* ViewController1.swift in Sources */,
 				72F2EB13231793B300877DEE /* SDImageCoder.m in Sources */,
 				72F2EB46231793B300877DEE /* UIButton+WebCache.m in Sources */,
 				72F2EB38231793B300877DEE /* SDImageCachesManager.m in Sources */,
 				72F2EB11231793B300877DEE /* NSImage+Compatibility.m in Sources */,
-				72EEE24E231AA26F00CFA3BE /* UICollectionViewDelegates.swift in Sources */,
-				72EEE249231AA26F00CFA3BE /* UIScrollViewDelegates.swift in Sources */,
-				72EEE245231AA26F00CFA3BE /* JTAppleCalendarDelegateProtocol.swift in Sources */,
-				72DF8F192322918A00A79F83 /* CalendarDateRangePickerViewController.swift in Sources */,
 				72F2EB2B231793B300877DEE /* SDImageCachesManagerOperation.m in Sources */,
 				72F2EB44231793B300877DEE /* UIView+WebCache.m in Sources */,
-				72EEE24B231AA26F00CFA3BE /* JTAppleCell.swift in Sources */,
 				72DDA5C823165A0500D4D156 /* IQKeyboardManager.swift in Sources */,
 				72CAA0D52303C1E80001E939 /* ServiceController.swift in Sources */,
 				72F2EB2A231793B300877DEE /* SDAnimatedImageRep.m in Sources */,
 				72A577BB230C2796006114E3 /* FlowLayoutController.swift in Sources */,
-				72EEE240231AA26F00CFA3BE /* JTAppleCalendarView.swift in Sources */,
 				72F2EB47231793B300877DEE /* SDWebImageDownloaderRequestModifier.m in Sources */,
 				72F2EB3B231793B300877DEE /* NSData+ImageContentType.m in Sources */,
 				72F2EB29231793B300877DEE /* SDDiskCache.m in Sources */,
 				72F2EB18231793B300877DEE /* UIImage+ForceDecode.m in Sources */,
 				72F2EB37231793B300877DEE /* SDImageLoadersManager.m in Sources */,
-				72EEE24C231AA26F00CFA3BE /* JTAppleCalendarVariables.swift in Sources */,
 				72F2EB16231793B300877DEE /* SDAnimatedImage.m in Sources */,
-				72EEE241231AA26F00CFA3BE /* UserInteractionFunctions.swift in Sources */,
 				72F2EB40231793B300877DEE /* SDImageCacheConfig.m in Sources */,
 				72DEEF4922FDA6FB00F81906 /* MenuCVCell.swift in Sources */,
 				72166182230D1F0A00C5B29E /* RZViewActions.m in Sources */,
@@ -697,11 +614,10 @@
 				72F2EB25231793B300877DEE /* SDWebImagePrefetcher.m in Sources */,
 				72F2EB22231793B300877DEE /* SDWebImageCompat.m in Sources */,
 				72EEE13422FB036000AA4796 /* SidemenuController.swift in Sources */,
-				72EEE247231AA26F00CFA3BE /* CalendarStructs.swift in Sources */,
 				72F2EB35231793B300877DEE /* SDImageFrame.m in Sources */,
+				1765C0D9232A1E72004056CF /* DateSelectionController.swift in Sources */,
 				72A577BE230C284D006114E3 /* CollectionCVCell.swift in Sources */,
 				72F2EB12231793B300877DEE /* SDAnimatedImageView+WebCache.m in Sources */,
-				72EEE24D231AA26F00CFA3BE /* JTAppleCalendarLayout.swift in Sources */,
 				72F2EB17231793B300877DEE /* SDAnimatedImageView.m in Sources */,
 				72F2EB21231793B300877DEE /* SDMemoryCache.m in Sources */,
 				72F2EB26231793B300877DEE /* SDImageCoderHelper.m in Sources */,
@@ -718,19 +634,14 @@
 				72F2EB28231793B300877DEE /* SDImageIOCoder.m in Sources */,
 				72A88BB422FE8EE8002A5EAE /* PulseAnimation.swift in Sources */,
 				72F2EB34231793B300877DEE /* SDImageGIFCoder.m in Sources */,
-				72EEE243231AA26F00CFA3BE /* InternalActionFunctions.swift in Sources */,
 				72F2EB45231793B300877DEE /* UIImage+Metadata.m in Sources */,
 				72DC6EE32314EF0F00C4214B /* SearchTextField.swift in Sources */,
 				72F2EB1C231793B300877DEE /* SDWebImageCacheSerializer.m in Sources */,
 				72F2EB2C231793B300877DEE /* SDImageAssetManager.m in Sources */,
-				72EEE24F231AA26F00CFA3BE /* GlobalFunctionsAndExtensions.swift in Sources */,
 				72F2EB1A231793B300877DEE /* SDWebImageDownloader.m in Sources */,
-				72DDA5A42316583900D4D156 /* OtherController.swift in Sources */,
 				72F2EB32231793B300877DEE /* SDWebImageDownloaderConfig.m in Sources */,
-				72DF8F172322918A00A79F83 /* CalendarDateRangePickerCell.swift in Sources */,
 				72A577B8230C0270006114E3 /* AlertController.swift in Sources */,
 				72F2EB42231793B300877DEE /* SDWebImageDefine.m in Sources */,
-				72EEE246231AA26F00CFA3BE /* JTCalendarProtocols.swift in Sources */,
 				72F2EB36231793B300877DEE /* SDWebImageDownloaderOperation.m in Sources */,
 				72F2EB2E231793B300877DEE /* SDInternalMacros.m in Sources */,
 				72F2EB14231793B300877DEE /* SDWebImageManager.m in Sources */,
@@ -741,12 +652,9 @@
 				72CAA0D923043DB90001E939 /* AnimateController.swift in Sources */,
 				72F2EB33231793B300877DEE /* SDImageCache.m in Sources */,
 				72F2EB1F231793B300877DEE /* SDImageCodersManager.m in Sources */,
-				72EEE242231AA26F00CFA3BE /* JTAppleCalendarLayoutProtocol.swift in Sources */,
 				72F2EB31231793B300877DEE /* UIColor+HexString.m in Sources */,
 				72F2EB23231793B300877DEE /* SDImageAPNGCoder.m in Sources */,
-				72EEE259231AAA5000CFA3BE /* DateCell.swift in Sources */,
 				72F2EB39231793B300877DEE /* SDWebImageTransition.m in Sources */,
-				72EEE24A231AA26F00CFA3BE /* InternalQueryFunctions.swift in Sources */,
 				72F2EB30231793B300877DEE /* NSBezierPath+RoundedCorners.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,13 +43,8 @@ class AnimateController: UIViewController {
         }
         
     }
-    @IBAction func calenderTapped(_ sender: UIButton) {
-        let CalenderVC = self.storyboard!.instantiateViewController(withIdentifier: "CALENDER") as! CalenderController
-        CalenderVC.view.frame = UIScreen.main.bounds
-        UIApplication.shared.keyWindow?.addSubview(CalenderVC.view)
-        self.addChild(CalenderVC)
-        didMove(toParent: CalenderVC)
-    }
+    
+    
 }
 
 extension UIView {

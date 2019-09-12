@@ -49,8 +49,8 @@ class ViewController: UIViewController {
         btnDD.addTarget(self, action: #selector(DDTapped(_:)), for: .touchUpInside)
         
         menuVC = self.storyboard!.instantiateViewController(withIdentifier: "MENU") as! SidemenuController
-        menuVC.SideMenuHeaderArr = ["Home & Loader","Service","Animation, Alert & Calender","CollectionView Flow Layout","Privacy Policy","Education","Other"]
-//        menuVC.SideMenuDataArr = [["Hi","Hello"],[],[],[],[],[]]
+        menuVC.SideMenuHeaderArr = ["Home & Loader","Service","Animation & Alert","CollectionView Flow Layout","Range Date Selection","Click to Expand"]
+        menuVC.SideMenuDataArr = [[],[],[],[],[],["Expanded - 1","Expanded - 2"]]
         
         menuVC.menuSelection = { selection in
             if selection[0] == 2 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "SERVICE"), animated: true)
@@ -59,7 +59,13 @@ class ViewController: UIViewController {
             }
             else if selection[0] == 4 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "FLOW"), animated: true)
             }
-            else if selection[0] == 7 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "OTHER"), animated: true)
+            else if selection[0] == 5 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "DATE"), animated: true)
+            } else {
+                if selection[1] == 1 {
+                    print("Expanded - 1")
+                } else if selection[1] == 2 {
+                    print("Expanded - 2")
+                }
             }
         }
         gradientView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], type: .vertical)
