@@ -100,6 +100,52 @@ ServiceCenter.serviceCallImageUpload(url: yourURL, image : UIImage(named: "Test"
 }
 ```
 
+## How to configure CollectionView Auto Resizing Cell?
+
+- Put this code in your collectionview cell
+
+```swift
+
+// declare lazy width variable
+
+lazy var width : NSLayoutConstraint = {
+    let width = contentView.widthAnchor.constraint(equalToConstant: bounds.size.width)
+    width.isActive = true
+    return width
+}()
+
+// override this method
+
+override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+    width.constant = bounds.size.width
+    return contentView.systemLayoutSizeFitting(CGSize(width: targetSize.width , height: 1))
+}   
+
+```
+
+- Now declare flowLayout variable whre collcetionview methods exists
+
+```swift
+
+var layout: UICollectionViewFlowLayout = {
+    let layout = UICollectionViewFlowLayout()
+    let width = UIScreen.main.bounds.size.width
+    layout.estimatedItemSize = CGSize(width: width, height: 10)
+    return layout
+}()
+
+// you can give minimum line spacing and minimum item spacing & section Insets as mentioned below!
+
+layout.minimumLineSpacing = 0
+layout.minimumInteritemSpacing = 0
+layout.sectionInset = UIEdgeInsets(top: 12, left: 0, bottom: 4, right: 0)
+
+// assign flow layout object to your's collectionview flowLayout
+
+resizeCol.collectionViewLayout = layout
+
+```
+
 ## How to Make Alert Style DropDown?
 
 - Implement Below Code where you wanted to appear DropDown.
