@@ -123,7 +123,7 @@ override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittin
 
 ```
 
-- Now declare flowLayout variable whre collcetionview methods exists
+- Now declare flowLayout variable where collectionview methods exists
 
 ```swift
 
