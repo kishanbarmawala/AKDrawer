@@ -186,16 +186,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EN2-0m-Kw7">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="MgZ-6q-fLZ" id="U2g-Gv-Nla"/>
                                     <outlet property="delegate" destination="MgZ-6q-fLZ" id="YSH-cz-V7Y"/>
@@ -280,7 +271,7 @@
                         <viewLayoutGuide key="safeArea" id="rIP-0g-h4T"/>
                     </view>
                     <navigationItem key="navigationItem" id="gwZ-a0-HUr">
-                        <barButtonItem key="leftBarButtonItem" title="Side" style="plain" id="ZBs-fM-8hH">
+                        <barButtonItem key="leftBarButtonItem" title="Side" id="ZBs-fM-8hH">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="sideMenuTapped:" destination="zUx-Bk-RRw" id="SjE-ZU-OEa"/>
@@ -290,9 +281,8 @@
                     <connections>
                         <outlet property="btnDD" destination="e8S-Va-rhE" id="CD4-RN-y9s"/>
                         <outlet property="gradientView" destination="njx-cA-Cfi" id="rJd-XM-XWf"/>
-                        <segue destination="vqX-iq-nck" kind="show" id="e86-tZ-gtx"/>
-                        <segue destination="aRl-Em-pEh" kind="show" id="dF1-F2-J9G"/>
-                        <segue destination="MzQ-gU-zmX" kind="show" id="tmJ-er-saM"/>
+                        <segue destination="vqX-iq-nck" kind="show" identifier="service" id="e86-tZ-gtx"/>
+                        <segue destination="aRl-Em-pEh" kind="show" identifier="home" id="dF1-F2-J9G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvk-X6-Ve0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,53 +323,42 @@
             </objects>
             <point key="canvasLocation" x="3971" y="102"/>
         </scene>
-        <!--Date Selection Controller-->
-        <scene sceneID="xbO-Jj-J4N">
+        <!--Auto Resizing Controller-->
+        <scene sceneID="Pkb-38-fL3">
             <objects>
-                <viewController storyboardIdentifier="DATE" id="MzQ-gU-zmX" customClass="DateSelectionController" customModule="AKDrawer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4DL-h6-Ayn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                <viewController storyboardIdentifier="RESIZE" id="QcJ-v6-Jcq" customClass="AutoResizingController" customModule="AKDrawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLH-AX-E18">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGh-sT-WPR">
-                                <rect key="frame" x="107" y="375.33333333333331" width="200" height="57.333333333333314"/>
-                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="YFo-ck-qRB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="21"/>
-                                <state key="normal" title="Select Date!"/>
-                                <connections>
-                                    <action selector="calenderTapped:" destination="aRl-Em-pEh" eventType="touchUpInside" id="MsV-Z1-IU5"/>
-                                    <action selector="calenderTapped:" destination="MzQ-gU-zmX" eventType="touchUpInside" id="h13-8B-RcY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7r-tB-m0g">
-                                <rect key="frame" x="16" y="32" width="382" height="0.0"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fVR-Us-6aD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cdj-AT-bXl">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="L7r-tB-m0g" firstAttribute="top" secondItem="Kn2-dJ-BID" secondAttribute="top" constant="32" id="0IO-Hz-8dj"/>
-                            <constraint firstItem="JGh-sT-WPR" firstAttribute="centerX" secondItem="4DL-h6-Ayn" secondAttribute="centerX" id="3lV-dM-Gb2"/>
-                            <constraint firstItem="JGh-sT-WPR" firstAttribute="width" secondItem="JGh-sT-WPR" secondAttribute="height" multiplier="3.5:1" id="Jb1-bL-nTJ"/>
-                            <constraint firstItem="L7r-tB-m0g" firstAttribute="leading" secondItem="Kn2-dJ-BID" secondAttribute="leading" constant="16" id="LiE-J5-T0R"/>
-                            <constraint firstItem="JGh-sT-WPR" firstAttribute="centerY" secondItem="4DL-h6-Ayn" secondAttribute="centerY" id="U25-Ce-UnB"/>
-                            <constraint firstItem="Kn2-dJ-BID" firstAttribute="trailing" secondItem="L7r-tB-m0g" secondAttribute="trailing" constant="16" id="xXK-Jm-DtJ"/>
+                            <constraint firstAttribute="bottom" secondItem="fVR-Us-6aD" secondAttribute="bottom" id="NFN-SN-ofT"/>
+                            <constraint firstItem="kw7-xF-Fh8" firstAttribute="trailing" secondItem="fVR-Us-6aD" secondAttribute="trailing" id="jXb-cN-KqM"/>
+                            <constraint firstItem="fVR-Us-6aD" firstAttribute="top" secondItem="kw7-xF-Fh8" secondAttribute="top" id="tHk-mK-569"/>
+                            <constraint firstItem="fVR-Us-6aD" firstAttribute="leading" secondItem="kw7-xF-Fh8" secondAttribute="leading" id="yeM-Bd-jpg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Kn2-dJ-BID"/>
+                        <viewLayoutGuide key="safeArea" id="kw7-xF-Fh8"/>
                     </view>
                     <connections>
-                        <outlet property="btnCalender" destination="JGh-sT-WPR" id="KX9-pq-Sdt"/>
-                        <outlet property="lblDate" destination="L7r-tB-m0g" id="ssG-iy-e8c"/>
+                        <outlet property="resizeCol" destination="fVR-Us-6aD" id="5n7-Sj-7Ds"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IMt-VG-ofq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3A-s1-OMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2422" y="781"/>
+            <point key="canvasLocation" x="4691" y="102"/>
         </scene>
         <!--Animate Controller-->
         <scene sceneID="88m-Ga-jSU">
@@ -409,13 +388,29 @@
                                     <action selector="alertTapped:" destination="aRl-Em-pEh" eventType="touchUpInside" id="JuS-Mv-4wz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvP-uJ-glP">
+                                <rect key="frame" x="107" y="286.33333333333331" width="200" height="57"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="vNd-mt-0jB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Calender"/>
+                                <connections>
+                                    <action selector="calenderTapped:" destination="aRl-Em-pEh" eventType="touchUpInside" id="mhU-dA-QSs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="pvP-uJ-glP" firstAttribute="centerX" secondItem="A63-3c-rxn" secondAttribute="centerX" id="Dei-Ut-Cd0"/>
                             <constraint firstItem="qgB-kW-OLd" firstAttribute="width" secondItem="vpB-8T-ZhD" secondAttribute="width" id="F2P-Zp-cen"/>
                             <constraint firstItem="qgB-kW-OLd" firstAttribute="leading" secondItem="2L0-sA-ugP" secondAttribute="leading" id="IDJ-nt-E16"/>
+                            <constraint firstItem="A63-3c-rxn" firstAttribute="top" secondItem="pvP-uJ-glP" secondAttribute="bottom" constant="32" id="TTW-Sg-Oob"/>
                             <constraint firstItem="A63-3c-rxn" firstAttribute="centerY" secondItem="vpB-8T-ZhD" secondAttribute="centerY" id="bhm-gn-IQU"/>
+                            <constraint firstItem="pvP-uJ-glP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2L0-sA-ugP" secondAttribute="top" constant="16" id="gcK-Q0-Gim"/>
                             <constraint firstItem="2L0-sA-ugP" firstAttribute="bottom" secondItem="qgB-kW-OLd" secondAttribute="bottom" id="mme-IR-L62"/>
+                            <constraint firstItem="pvP-uJ-glP" firstAttribute="width" secondItem="pvP-uJ-glP" secondAttribute="height" multiplier="3.5:1" id="nRm-i0-hvP"/>
                             <constraint firstItem="A63-3c-rxn" firstAttribute="centerX" secondItem="vpB-8T-ZhD" secondAttribute="centerX" id="uTg-52-UYX"/>
                             <constraint firstItem="qgB-kW-OLd" firstAttribute="trailing" secondItem="2L0-sA-ugP" secondAttribute="trailing" id="w9W-Gi-RNP"/>
                         </constraints>
@@ -439,44 +434,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8G-qA-3kF">
-                                <rect key="frame" x="18.666666666666657" y="209.66666666666666" width="376.66666666666674" height="476.66666666666674"/>
+                                <rect key="frame" x="18.666666666666657" y="191" width="376.66666666666674" height="514"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKp-Ka-eMD">
-                                        <rect key="frame" x="0.0" y="0.0" width="376.66666666666669" height="476.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="376.66666666666669" height="514"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faI-rc-dx3">
-                                                <rect key="frame" x="0.0" y="426.66666666666674" width="188" height="50"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
-                                                <state key="normal" title="OK"/>
-                                                <connections>
-                                                    <action selector="okTapped:" destination="lnc-ba-y3O" eventType="touchUpInside" id="UfT-kR-gYC"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWi-G0-JVJ">
-                                                <rect key="frame" x="189" y="426.66666666666674" width="187.66666666666663" height="50"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
-                                                <state key="normal" title="CANCEL"/>
-                                                <connections>
-                                                    <action selector="cancelTapped:" destination="lnc-ba-y3O" eventType="touchUpInside" id="aTz-ob-BGO"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgA-hO-gI2">
-                                                <rect key="frame" x="0.0" y="0.0" width="376.66666666666669" height="50"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="unQ-9D-n6i"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-dW-fWp">
-                                                <rect key="frame" x="0.0" y="50.000000000000028" width="376.66666666666669" height="376.66666666666674"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-dW-fWp">
+                                                <rect key="frame" x="0.0" y="50" width="376.66666666666669" height="414"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="jTb-dW-fWp" secondAttribute="height" id="mBh-lk-ac8"/>
+                                                    <constraint firstAttribute="width" secondItem="jTb-dW-fWp" secondAttribute="height" multiplier="1:1.1" id="mBh-lk-ac8"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cTH-yc-wkS">
                                                     <size key="itemSize" width="85" height="85"/>
@@ -490,6 +457,34 @@
                                                     <outlet property="delegate" destination="lnc-ba-y3O" id="efq-m9-T4g"/>
                                                 </connections>
                                             </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faI-rc-dx3">
+                                                <rect key="frame" x="0.0" y="464" width="188" height="50"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                                <state key="normal" title="OK"/>
+                                                <connections>
+                                                    <action selector="okTapped:" destination="lnc-ba-y3O" eventType="touchUpInside" id="gxb-um-dQq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWi-G0-JVJ">
+                                                <rect key="frame" x="189" y="464" width="187.66666666666663" height="50"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                                <state key="normal" title="CANCEL"/>
+                                                <connections>
+                                                    <action selector="cancelTapped:" destination="lnc-ba-y3O" eventType="touchUpInside" id="Ea3-cs-Fjs"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgA-hO-gI2">
+                                                <rect key="frame" x="0.0" y="0.0" width="376.66666666666669" height="50"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.26274509800000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="unQ-9D-n6i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -530,11 +525,10 @@
                         <viewLayoutGuide key="safeArea" id="SbO-S3-GB3"/>
                     </view>
                     <connections>
-                        <outlet property="backView" destination="pKp-Ka-eMD" id="vjb-hg-Rx8"/>
-                        <outlet property="btnOK" destination="faI-rc-dx3" id="Nbz-cl-2o1"/>
-                        <outlet property="calendarView" destination="jTb-dW-fWp" id="rbH-ws-X3c"/>
-                        <outlet property="lblTitle" destination="IgA-hO-gI2" id="XTH-Xq-tqt"/>
-                        <outlet property="outerView" destination="M8G-qA-3kF" id="98D-Hq-bR3"/>
+                        <outlet property="backView" destination="M8G-qA-3kF" id="u3S-2y-Cnf"/>
+                        <outlet property="calendarView" destination="jTb-dW-fWp" id="Y4s-Lk-bLy"/>
+                        <outlet property="lblTitle" destination="IgA-hO-gI2" id="uSm-Mc-ATH"/>
+                        <outlet property="outerView" destination="pKp-Ka-eMD" id="I55-mM-3HX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2e-6B-mTe" userLabel="First Responder" sceneMemberID="firstResponder"/>

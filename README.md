@@ -23,6 +23,10 @@ You can Give your Reviews and Best Ideas!
 :-----------------:|:----------------:|:-----------------------:|:--------------------------:
 ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Loader%20With%20Image%20and%20Text.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Alert%20DropDown.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Equal%20Spacing%20CollectionView%20Cell.png)   |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Range%20Selection%20Calender.png)
 
+  Auto-Resizing CollectionView Cell with Own Design |
+  :-----------------:|
+![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Auto%20Resizing%20CollectionView.png)  | 
+
 ## Requirements
 
 - Swift 4.

@@ -43,14 +43,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let assistiveTouch = AssistiveTouch(frame: CGRect(x: 10, y: 100, width: 50, height: 50))
+        assistiveTouch.addTarget(self, action: #selector(floatingTapped(_:)), for: .touchUpInside)
+        assistiveTouch.setImage(UIImage(named: "KImage"), for: .normal)
+        view.addSubview(assistiveTouch)
+        
         ddTableView.delegate = self
         ddTableView.dataSource = self
         
         btnDD.addTarget(self, action: #selector(DDTapped(_:)), for: .touchUpInside)
         
         menuVC = self.storyboard!.instantiateViewController(withIdentifier: "MENU") as! SidemenuController
-        menuVC.SideMenuHeaderArr = ["Home & Loader","Service","Animation & Alert","CollectionView Flow Layout","Range Date Selection","Click to Expand"]
-        menuVC.SideMenuDataArr = [[],[],[],[],[],["Expanded - 1","Expanded - 2"]]
+        menuVC.SideMenuHeaderArr = ["Home & Loader","Service","Animation, Alert & Calender","CollectionView Flow Layout","CollectionView Auto Resizing","Click To Expand"]
+        menuVC.SideMenuDataArr = [[],[],[],[],[],["Other - 1","Other - 2"]]
         
         menuVC.menuSelection = { selection in
             if selection[0] == 2 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "SERVICE"), animated: true)
@@ -59,13 +64,7 @@ class ViewController: UIViewController {
             }
             else if selection[0] == 4 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "FLOW"), animated: true)
             }
-            else if selection[0] == 5 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "DATE"), animated: true)
-            } else {
-                if selection[1] == 1 {
-                    print("Expanded - 1")
-                } else if selection[1] == 2 {
-                    print("Expanded - 2")
-                }
+            else if selection[0] == 5 { self.navigationController?.pushViewController(self.storyboard!.instantiateViewController(withIdentifier: "RESIZE"), animated: true)
             }
         }
         gradientView.addGradient(colors: [UIColor.red.cgColor, UIColor.blue.cgColor], type: .vertical)
@@ -78,6 +77,10 @@ class ViewController: UIViewController {
     }
     
     //MARK:- FUNCTIONS
+    
+    @objc func floatingTapped(_ sender: UIButton) {
+        print("float")
+    }
     
     @objc func DDTapped(_ sender: UIButton) {
         selectionBtn = sender
@@ -348,6 +351,41 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate, UITextFiel
     }
 }
 
+extension UIView {
+    
+    enum GradientType {
+        case horizontal
+        case vertical
+    }
+    
+    func addGradient(colors: [CGColor], type: GradientType) {
+        let gradeLayer = CAGradientLayer()
+        gradeLayer.colors = colors//[UIColor.red.cgColor, UIColor.blue.cgColor]
+        switch type {
+        case .horizontal:
+            gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+            gradeLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
+        case .vertical:
+            gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+            gradeLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
+        }
+        gradeLayer.frame = self.bounds
+        self.layer.insertSublayer(gradeLayer, at: 0)
+    }
+    
+    func addShadow() {
+        self.layer.cornerRadius = 8.0
+        self.layer.borderColor = UIColor.clear.cgColor
+        self.layer.borderWidth = 0.0
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowOpacity = 0.3
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
+        self.layer.masksToBounds = false
+    }
+    
+}
+
 extension String {
     
     func substring(from: Int?, to: Int?) -> String {
@@ -378,25 +416,5 @@ extension String {
         
         return self.substring(from: from, to: end)
     }
-}
-
-extension UIView {
-    enum GradientType {
-        case horizontal
-        case vertical
-    }
-    func addGradient(colors: [CGColor], type: GradientType) {
-        let gradeLayer = CAGradientLayer()
-        gradeLayer.colors = colors//[UIColor.red.cgColor, UIColor.blue.cgColor]
-        switch type {
-        case .horizontal:
-            gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-            gradeLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
-        case .vertical:
-            gradeLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-            gradeLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
-        }
-        gradeLayer.frame = self.bounds
-        self.layer.insertSublayer(gradeLayer, at: 0)
-    }
+    
 }
