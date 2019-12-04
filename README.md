@@ -25,12 +25,13 @@ You can Give your Reviews and Best Ideas!
 
   Auto-Resizing CollectionView Cell with Own Design |
   :-----------------:|
-![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Auto%20Resizing%20CollectionView.png)  | 
+  <img src="https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Auto%20Resizing%20CollectionView.png" width="240" height="520"> | 
 
 ## Requirements
 
-- Swift 4.
-- iOS 9.0 or higher.
+- Swift 4.0
+- Xcode 9.0+
+- iOS 9.0+
 
 
 ## How to Make SideMenu?
