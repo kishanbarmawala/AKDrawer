@@ -17,7 +17,7 @@ You can Give your Reviews and Best Ideas!
 
   Sidemenu Collapsed  |  Sidemenu Expanded  |  DropDown with Search  |  Pulse Animation
 :--------------------:|:-------------------:|:----------------------:|:-----------------:
-![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Collapsed.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Expanded.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/DropDown%20with%20Search.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Pulse%20Animation.png)
+![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Collapsed.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/SideMenu%20Expanded.png)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/DropDown%20with%20Search.gif)  |  ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Pulse%20Animation.png)
 
   Animated Loader  |  Alert DropDown  |  Equal Spacing CV Cell  |  Range Calender Selection  
 :-----------------:|:----------------:|:-----------------------:|:--------------------------:
