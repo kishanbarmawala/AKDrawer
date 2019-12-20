@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1768F32E23AD3158007606A8 /* AKDrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768F32D23AD3158007606A8 /* AKDrawerUITests.swift */; };
+		1768F33C23AD3162007606A8 /* AKDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768F33B23AD3162007606A8 /* AKDrawerTests.swift */; };
 		5BD1701C2391A66A00397AEB /* AutoResizingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1701B2391A66A00397AEB /* AutoResizingController.swift */; };
 		5BD1701F2391A84000397AEB /* ResizingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1701D2391A84000397AEB /* ResizingCVCell.swift */; };
 		5BD170202391A84000397AEB /* ResizingCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD1701E2391A84000397AEB /* ResizingCVCell.xib */; };
@@ -116,7 +118,30 @@
 		72F6AFEE2328B9FE00FE3EEC /* AssistiveTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6AFED2328B9FE00FE3EEC /* AssistiveTouch.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1768F33023AD3158007606A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72EEE11622FAFF9600AA4796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72EEE11D22FAFF9600AA4796;
+			remoteInfo = AKDrawer;
+		};
+		1768F33E23AD3162007606A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72EEE11622FAFF9600AA4796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72EEE11D22FAFF9600AA4796;
+			remoteInfo = AKDrawer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1768F32B23AD3158007606A8 /* AKDrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKDrawerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1768F32D23AD3158007606A8 /* AKDrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDrawerUITests.swift; sourceTree = "<group>"; };
+		1768F32F23AD3158007606A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1768F33923AD3161007606A8 /* AKDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1768F33B23AD3162007606A8 /* AKDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDrawerTests.swift; sourceTree = "<group>"; };
+		1768F33D23AD3162007606A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD1701B2391A66A00397AEB /* AutoResizingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResizingController.swift; sourceTree = "<group>"; };
 		5BD1701D2391A84000397AEB /* ResizingCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingCVCell.swift; sourceTree = "<group>"; };
 		5BD1701E2391A84000397AEB /* ResizingCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResizingCVCell.xib; sourceTree = "<group>"; };
@@ -290,6 +315,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1768F32823AD3158007606A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1768F33623AD3161007606A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72EEE11B22FAFF9600AA4796 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,6 +339,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1768F32C23AD3158007606A8 /* AKDrawerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1768F32D23AD3158007606A8 /* AKDrawerUITests.swift */,
+				1768F32F23AD3158007606A8 /* Info.plist */,
+			);
+			path = AKDrawerUITests;
+			sourceTree = "<group>";
+		};
+		1768F33A23AD3162007606A8 /* AKDrawerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1768F33B23AD3162007606A8 /* AKDrawerTests.swift */,
+				1768F33D23AD3162007606A8 /* Info.plist */,
+			);
+			path = AKDrawerTests;
+			sourceTree = "<group>";
+		};
 		5BD1701A2391A62E00397AEB /* Auto Resizing CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +464,8 @@
 			isa = PBXGroup;
 			children = (
 				72EEE12022FAFF9600AA4796 /* AKDrawer */,
+				1768F32C23AD3158007606A8 /* AKDrawerUITests */,
+				1768F33A23AD3162007606A8 /* AKDrawerTests */,
 				72EEE11F22FAFF9600AA4796 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -415,6 +474,8 @@
 			isa = PBXGroup;
 			children = (
 				72EEE11E22FAFF9600AA4796 /* AKDrawer.app */,
+				1768F32B23AD3158007606A8 /* AKDrawerUITests.xctest */,
+				1768F33923AD3161007606A8 /* AKDrawerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -599,6 +660,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1768F32A23AD3158007606A8 /* AKDrawerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1768F33423AD3158007606A8 /* Build configuration list for PBXNativeTarget "AKDrawerUITests" */;
+			buildPhases = (
+				1768F32723AD3158007606A8 /* Sources */,
+				1768F32823AD3158007606A8 /* Frameworks */,
+				1768F32923AD3158007606A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1768F33123AD3158007606A8 /* PBXTargetDependency */,
+			);
+			name = AKDrawerUITests;
+			productName = AKDrawerUITests;
+			productReference = 1768F32B23AD3158007606A8 /* AKDrawerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1768F33823AD3161007606A8 /* AKDrawerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1768F34023AD3162007606A8 /* Build configuration list for PBXNativeTarget "AKDrawerTests" */;
+			buildPhases = (
+				1768F33523AD3161007606A8 /* Sources */,
+				1768F33623AD3161007606A8 /* Frameworks */,
+				1768F33723AD3161007606A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1768F33F23AD3162007606A8 /* PBXTargetDependency */,
+			);
+			name = AKDrawerTests;
+			productName = AKDrawerTests;
+			productReference = 1768F33923AD3161007606A8 /* AKDrawerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		72EEE11D22FAFF9600AA4796 /* AKDrawer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72EEE13022FAFF9800AA4796 /* Build configuration list for PBXNativeTarget "AKDrawer" */;
@@ -626,6 +723,14 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Gatisofttech;
 				TargetAttributes = {
+					1768F32A23AD3158007606A8 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 72EEE11D22FAFF9600AA4796;
+					};
+					1768F33823AD3161007606A8 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 72EEE11D22FAFF9600AA4796;
+					};
 					72EEE11D22FAFF9600AA4796 = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
@@ -646,11 +751,27 @@
 			projectRoot = "";
 			targets = (
 				72EEE11D22FAFF9600AA4796 /* AKDrawer */,
+				1768F32A23AD3158007606A8 /* AKDrawerUITests */,
+				1768F33823AD3161007606A8 /* AKDrawerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1768F32923AD3158007606A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1768F33723AD3161007606A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72EEE11C22FAFF9600AA4796 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,6 +793,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1768F32723AD3158007606A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1768F32E23AD3158007606A8 /* AKDrawerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1768F33523AD3161007606A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1768F33C23AD3162007606A8 /* AKDrawerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72EEE11A22FAFF9600AA4796 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -777,6 +914,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1768F33123AD3158007606A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72EEE11D22FAFF9600AA4796 /* AKDrawer */;
+			targetProxy = 1768F33023AD3158007606A8 /* PBXContainerItemProxy */;
+		};
+		1768F33F23AD3162007606A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72EEE11D22FAFF9600AA4796 /* AKDrawer */;
+			targetProxy = 1768F33E23AD3162007606A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		72EEE12522FAFF9600AA4796 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -797,6 +947,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1768F33223AD3158007606A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MK7VTXY427;
+				INFOPLIST_FILE = AKDrawerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kian.AKDrawerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AKDrawer;
+			};
+			name = Debug;
+		};
+		1768F33323AD3158007606A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MK7VTXY427;
+				INFOPLIST_FILE = AKDrawerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kian.AKDrawerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AKDrawer;
+			};
+			name = Release;
+		};
+		1768F34123AD3162007606A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MK7VTXY427;
+				INFOPLIST_FILE = AKDrawerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kian.AKDrawerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKDrawer.app/AKDrawer";
+			};
+			name = Debug;
+		};
+		1768F34223AD3162007606A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MK7VTXY427;
+				INFOPLIST_FILE = AKDrawerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kian.AKDrawerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKDrawer.app/AKDrawer";
+			};
+			name = Release;
+		};
 		72EEE12E22FAFF9800AA4796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -959,6 +1191,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1768F33423AD3158007606A8 /* Build configuration list for PBXNativeTarget "AKDrawerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1768F33223AD3158007606A8 /* Debug */,
+				1768F33323AD3158007606A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1768F34023AD3162007606A8 /* Build configuration list for PBXNativeTarget "AKDrawerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1768F34123AD3162007606A8 /* Debug */,
+				1768F34223AD3162007606A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		72EEE11922FAFF9600AA4796 /* Build configuration list for PBXProject "AKDrawer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
