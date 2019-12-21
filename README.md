@@ -1,5 +1,3 @@
-# AKDrawer
- 
 ![](https://github.com/kishanbarmawala/AKDrawer/blob/master/Screenshot/Home.jpg)
 
 If you like SideMenu, give it a ★ at the top right of this page.
