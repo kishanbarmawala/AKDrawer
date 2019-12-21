@@ -16,6 +16,7 @@ class AnimateController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Anim), userInfo: nil, repeats: false)
+        //ghadfkjg
     }
     
     override func viewWillLayoutSubviews() {

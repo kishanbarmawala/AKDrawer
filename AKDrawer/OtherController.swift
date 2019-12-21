@@ -12,7 +12,8 @@ class OtherController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Hello World
+        // How are you
         // Do any additional setup after loading the view.
     }
     
