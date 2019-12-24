@@ -64,9 +64,9 @@ class AlertController: UIViewController {
     
     func hideView() {
         self.view.transform = .identity
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .allowUserInteraction, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.view.backgroundColor = .clear
-            self.view.transform = CGAffineTransform(scaleX: 0.11, y: 0.1)
+            self.view.transform = CGAffineTransform(scaleX: 0.0001, y: 0.0001)
         }, completion: { (Bool) in
             self.view.removeFromSuperview()
             self.removeFromParent()
