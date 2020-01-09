@@ -26,7 +26,7 @@ class ServiceController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        ServiceCenter.serviceCallGetWithSync(urlString: "https://reqres.in/api/users?page=1", responseType: .none) { (json, error) in
+        Services.serviceCallGetWithSync(urlString: "https://reqres.in/api/users?page=1", responseType: .none) { (json, error) in
             if let tempDic = json as? Dictionary<String,Any> {
                 self.tblData = tempDic["data"] as! Array<Dictionary<String,Any>>
                 DispatchQueue.main.async {
@@ -35,7 +35,7 @@ class ServiceController: UIViewController {
             }
         }
         
-        ServiceCenter.serviceCallGetWithAsync(urlString: "https://reqres.in/api/users?page=2", responseType: .none) { (httpResponse, json, error) in
+        Services.serviceCallGetWithAsync(urlString: "https://reqres.in/api/users?page=2", responseType: .none) { (httpResponse, json, error) in
             print(json!)
         }
         

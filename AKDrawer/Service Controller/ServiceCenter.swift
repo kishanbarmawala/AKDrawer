@@ -9,10 +9,7 @@
 import Foundation
 import UIKit
 
-let ServiceCenter = Services()
-
-//class ServiceCenter {
-class Services {
+struct Services {
     
     enum imageTypes {
         case jpeg
@@ -37,7 +34,7 @@ class Services {
     }
     
     /// Network call with AsyncTask using GET method which returns HTTP Response, JSON Response and Error
-    func serviceCallGetWithAsync(urlString: String, responseType: responseTypes, completionHandler: ((HTTPURLResponse?, Any?, Error?)->())?) {
+    static func serviceCallGetWithAsync(urlString: String, responseType: responseTypes, completionHandler: ((HTTPURLResponse?, Any?, Error?)->())?) {
         
         let tempUrl = URL(string: urlString)
         
@@ -77,7 +74,7 @@ class Services {
     }
     
     /// Network call with SynchronizeTask using GET method which returns JSON Response and Error
-    func serviceCallGetWithSync(urlString: String, responseType: responseTypes, completionHandler: ((Any?, Error?)->())?) {
+    static func serviceCallGetWithSync(urlString: String, responseType: responseTypes, completionHandler: ((Any?, Error?)->())?) {
         
         let tempUrl = URL(string: urlString)
         
@@ -111,7 +108,7 @@ class Services {
     }
     
     /// Network Call Function With AsyncTask POST method with Header Key and Value which returns HTTP Response, JSON Response and Error
-    func serviceCallPost(urlString: String, headerKey: String, headerValue: String, responseType: responseTypes, completionHandler: ((HTTPURLResponse?, Any?, Error?)->())?) {
+    static func serviceCallPost(urlString: String, headerKey: String, headerValue: String, responseType: responseTypes, completionHandler: ((HTTPURLResponse?, Any?, Error?)->())?) {
         
         let tempURL = URL(string: urlString)
         var request = URLRequest(url: tempURL!)
@@ -156,7 +153,7 @@ class Services {
     }
     
     /// Image Uploading Service which returns HTTP Response and Error
-    func serviceCallImageUpload(url: String, image : UIImage, imageType: imageTypes, completionHandler: ((HTTPURLResponse?,Error?)->())?) {
+    static func serviceCallImageUpload(url: String, image : UIImage, imageType: imageTypes, completionHandler: ((HTTPURLResponse?,Error?)->())?) {
         
         var request = URLRequest(url: URL(string: url)!)
         let dateFormatter = DateFormatter()
