@@ -271,8 +271,8 @@
                         <viewLayoutGuide key="safeArea" id="rIP-0g-h4T"/>
                     </view>
                     <navigationItem key="navigationItem" id="gwZ-a0-HUr">
-                        <barButtonItem key="leftBarButtonItem" title="Side" id="ZBs-fM-8hH">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" title="Side" image="sidemenu" style="plain" id="ZBs-fM-8hH">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="sideMenuTapped:" destination="zUx-Bk-RRw" id="SjE-ZU-OEa"/>
                             </connections>
@@ -400,6 +400,21 @@
                                     <action selector="calenderTapped:" destination="aRl-Em-pEh" eventType="touchUpInside" id="mhU-dA-QSs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTz-Rq-ecY">
+                                <rect key="frame" x="8" y="8" width="40" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="eTu-Sw-FtV"/>
+                                    <constraint firstAttribute="height" constant="100" id="iyC-Cf-cEM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="#">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calenderTapped:" destination="aRl-Em-pEh" eventType="touchUpInside" id="ALz-OB-03R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -407,6 +422,8 @@
                             <constraint firstItem="qgB-kW-OLd" firstAttribute="width" secondItem="vpB-8T-ZhD" secondAttribute="width" id="F2P-Zp-cen"/>
                             <constraint firstItem="qgB-kW-OLd" firstAttribute="leading" secondItem="2L0-sA-ugP" secondAttribute="leading" id="IDJ-nt-E16"/>
                             <constraint firstItem="A63-3c-rxn" firstAttribute="top" secondItem="pvP-uJ-glP" secondAttribute="bottom" constant="32" id="TTW-Sg-Oob"/>
+                            <constraint firstItem="uTz-Rq-ecY" firstAttribute="leading" secondItem="2L0-sA-ugP" secondAttribute="leading" constant="8" id="UsX-34-dzm"/>
+                            <constraint firstItem="uTz-Rq-ecY" firstAttribute="top" secondItem="2L0-sA-ugP" secondAttribute="top" constant="8" id="bWb-lr-xsi"/>
                             <constraint firstItem="A63-3c-rxn" firstAttribute="centerY" secondItem="vpB-8T-ZhD" secondAttribute="centerY" id="bhm-gn-IQU"/>
                             <constraint firstItem="pvP-uJ-glP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2L0-sA-ugP" secondAttribute="top" constant="16" id="gcK-Q0-Gim"/>
                             <constraint firstItem="2L0-sA-ugP" firstAttribute="bottom" secondItem="qgB-kW-OLd" secondAttribute="bottom" id="mme-IR-L62"/>
@@ -558,5 +575,6 @@
     <resources>
         <image name="building" width="2111" height="637"/>
         <image name="profile_default" width="500" height="500"/>
+        <image name="sidemenu" width="22" height="22"/>
     </resources>
 </document>

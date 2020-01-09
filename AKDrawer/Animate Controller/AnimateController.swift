@@ -29,22 +29,33 @@ class AnimateController: UIViewController {
     
     @IBAction func alertTapped(_ sender: UIButton) {
         if #available(iOS 10.0, *) {
-            let AlertVC = AlertController(nibName: "AlertController", bundle: nil)
-            AlertVC.view.frame = UIScreen.main.bounds
             
-            UIApplication.shared.keyWindow?.addSubview(AlertVC.view)
-            self.addChild(AlertVC)
-            didMove(toParent: AlertVC)
-            
-            AlertVC.addAction(title: "Blah Blah", dataSource: ["Objective - C","Swift","Java","Kotlin","R Language","Ruby on Rails","JavaScript"] as [AnyObject]) { (selection) in
-                self.btnAlert.setTitle(selection, for: .normal)
+            sender.rippleEffect {
+                
+                let AlertVC = AlertController(nibName: "AlertController", bundle: nil)
+                AlertVC.view.frame = UIScreen.main.bounds
+                
+                UIApplication.shared.keyWindow?.addSubview(AlertVC.view)
+                self.addChild(AlertVC)
+                self.didMove(toParent: AlertVC)
+                
+                AlertVC.addAction(title: "Blah Blah", dataSource: ["Objective - C","Swift","Java","Kotlin","R Language","Ruby on Rails","JavaScript"] as [AnyObject]) { (selection) in
+                    self.btnAlert.setTitle(selection, for: .normal)
+                }
+                
             }
+            
+           
         } else {
             // Fallback on earlier versions
         }
         
     }
     @IBAction func calenderTapped(_ sender: UIButton) {
+        
+        sender.rippleEffect {
+            
+            
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd"
@@ -78,8 +89,8 @@ class AnimateController: UIViewController {
         CalenderVC.view.frame = UIScreen.main.bounds
         UIApplication.shared.keyWindow?.addSubview(CalenderVC.view)
         self.addChild(CalenderVC)
-        didMove(toParent: CalenderVC)
-        
+        self.didMove(toParent: CalenderVC)
+        }
     
     }
 }

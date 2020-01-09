@@ -91,4 +91,51 @@ extension FlowLayoutController: UICollectionViewDataSource, UICollectionViewDele
             cell.alpha = 1.0
         }
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = colCollection.cellForItem(at: indexPath)
+        cell!.rippleEffect(completion: nil)
+    }
+}
+
+extension UIView {
+    func rippleEffect(effectColor: UIColor? = UIColor.lightGray,effectTime: Double? = 0.6 , completion: (() -> Void)?) {
+        // Creates a circular path around the view
+        let maxSizeBoundry = max(self.bounds.size.width, self.bounds.size.height)
+        
+        let path = UIBezierPath(ovalIn: CGRect(x: maxSizeBoundry / 4, y: maxSizeBoundry / 4, width: maxSizeBoundry / 2, height: maxSizeBoundry / 2))
+        // Position where the shape layer should be
+        let shapePosition = CGPoint(x: self.bounds.size.width / 2, y: self.bounds.size.height / 2)
+        let rippleShape = CAShapeLayer()
+        rippleShape.bounds = CGRect(x: 0, y: 0, width: maxSizeBoundry, height: maxSizeBoundry)
+        rippleShape.path = path.cgPath
+        rippleShape.fillColor = effectColor!.cgColor
+        //rippleShape.strokeColor = effectColor!.cgColor
+        //rippleShape.lineWidth = 4
+        rippleShape.position = shapePosition
+        rippleShape.opacity = 0
+        
+        // Add the ripple layer as the sublayer of the reference view
+        self.layer.addSublayer(rippleShape)
+        // Create scale animation of the ripples
+        let scaleAnim = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnim.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
+        scaleAnim.toValue = NSValue(caTransform3D: CATransform3DMakeScale(2, 2, 1))
+        // Create animation for opacity of the ripples
+        let opacityAnim = CABasicAnimation(keyPath: "opacity")
+        opacityAnim.fromValue = 1
+        opacityAnim.toValue = nil
+        // Group the opacity and scale animations
+        let animation = CAAnimationGroup()
+        animation.animations = [scaleAnim, opacityAnim]
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        animation.duration = CFTimeInterval(effectTime!)
+        animation.repeatCount = 1
+        animation.isRemovedOnCompletion = true
+        rippleShape.add(animation, forKey: "rippleEffect")
+        self.clipsToBounds = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + (effectTime! - 0.2)) {
+            completion?()
+        }
+    }
+    
 }

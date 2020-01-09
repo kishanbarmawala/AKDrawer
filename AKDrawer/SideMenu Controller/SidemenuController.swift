@@ -97,10 +97,14 @@ class SidemenuController: UIViewController {
         indexo[1] = 0
         indexo[0] = sender.view!.tag + 1
         
-        if !(SideMenuDataArr[indexo[0] - 1].count >= 1) {
-            hideSideMenu()
+        sender.view!.rippleEffect {
+            if !(self.SideMenuDataArr[self.indexo[0] - 1].count >= 1) {
+                self.hideSideMenu()
+            }
+            self.menuSelection?(self.indexo)
         }
-        menuSelection?(indexo)
+        
+        
 //        NotificationCenter.default.post(name: Notification.Name("SideMenuTap"), object: indexo)
     }
     
@@ -193,8 +197,12 @@ extension SidemenuController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         indexo[1] = indexPath.row + 1
-        hideSideMenu()
-        menuSelection?(indexo)
+        let cell = colSidemenu.cellForItem(at: indexPath)
+        cell!.rippleEffect {
+            self.hideSideMenu()
+            self.menuSelection?(self.indexo)
+        }
+        
         //        NotificationCenter.default.post(name: Notification.Name("SideMenuTap"), object: indexo)
     }
     

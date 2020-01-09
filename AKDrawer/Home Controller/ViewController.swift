@@ -160,6 +160,7 @@ class ViewController: UIViewController {
     //MARK:- BUTTON_ACTIONS
     
     @IBAction func sideMenuTapped(_ sender: UIBarButtonItem) {
+        
         menuVC.revealSideMenu()
     }
 
